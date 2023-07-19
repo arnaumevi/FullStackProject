@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Icons } from './Icons';
 
 export const Navbar = () => {
   return (
@@ -6,6 +7,7 @@ export const Navbar = () => {
       <div className='container max-w-7xl h-full mx-auto flex items-center justify-between gap-2'>
         {/*logo*/}
         <Link href='/' className='flex gap-2 items-center'>
+          <Icons.logo className='h-8 w-8 sm:h-6 sm:w-6' />
           <p className='text-gray-100 text-sm font-medium md:block'>
             Tech Ventures
           </p>
