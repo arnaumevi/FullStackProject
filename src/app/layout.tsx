@@ -1,26 +1,18 @@
+import { Navbar } from '@/components/Navbar';
 import './globals.css';
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Full Stack Project',
-  description: 'Una web para desarrolladores indepentientes',
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div
+      className={`${inter.className} min-h-screen pt-12 bg-slate-50 antialiased`}
+    >
+      <Navbar />
+      <div className="container max-w-7xl mx-auto h-full pt-15">{children}</div>
+    </div>
+  );
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body
-        className={`${inter.className} min-h-screen pt-12 bg-slate-50 antialiased`}
-      >
-        {children}
-      </body>
-    </html>
-  );
-}
+export default RootLayout;
