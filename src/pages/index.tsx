@@ -3,7 +3,7 @@ import Layout from '../app/layout';
 
 const HomePage: React.FC = () => (
   <Layout>
-    <h1>Hola mundo</h1>
+    <h1 className='pt-12'>Hola mundo</h1>
     {/* contenido de tu página principal */}
   </Layout>
 );
