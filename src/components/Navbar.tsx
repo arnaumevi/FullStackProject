@@ -19,8 +19,11 @@ export const Navbar = () => {
         </Link>
         {/* Buscador*/}
         <Link href="/sign-in">
-          <Button className="bg-black text-white p-2 rounded ml-auto mr-2">Sign In</Button>
+          <Button className="bg-black text-white p-2 rounded ml-auto mr-2">
+            Registro
+          </Button>
         </Link>
+
       </div>
     </div>
   );
